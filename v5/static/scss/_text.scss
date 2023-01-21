@@ -51,3 +51,19 @@ h3 {
 ::selection {
   background-color: $selection_background;
 }
+
+/*
+
+.colour {
+  &.sun { color: #f1c40f }
+  &.gray { color: #cacaca }
+  &.purple { color: #551a8b }
+  &.emerald { color: #2ecc71 }
+}
+
+.align {
+  &.center { text-align: center; }
+  &.left { text-align: left; }
+  & .right { text-align: right; }
+}
+*/

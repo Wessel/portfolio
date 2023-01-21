@@ -58,7 +58,7 @@
   "workbench.sideBar.location": "left",
   "debug.toolBarLocation": "floating",
   "debug.allowBreakpointsEverywhere": true,
-  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe", // C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe
+  // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe", // C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe
   "files.autoSave": "off",
   "files.exclude": {
     "**/.git": false,
