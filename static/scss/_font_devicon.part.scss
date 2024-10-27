@@ -1,0 +1,33 @@
+[class*='devicon-']:before {
+  display: inline-block;
+  font-family: 'devicon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.icon-archlinux:before {
+  content: '\0041';
+}
+
+.devicon-c:before { content: "" }
+.devicon-rust:before{ content:"" }
+.devicon-python:before{ content:"" }
+.devicon-typescript:before { content:"" }
+.devicon-elixir:before { content: "" }
+.devicon-html5:before { content:"" }
+.devicon-css3:before { content:"" }
+.devicon-sass:before { content:"" }
+
+.devicon-redis-plain:before{content:""}
+.devicon-postgresql-plain:before{content:""}
+.devicon-mongodb-plain:before{content:""}
+.devicon-cassandra-plain:before{content:""}
+.devicon-git-plain:before{content:""}
+.devicon-docker-plain:before{content:""}
+.devicon-archlinux-plain:before{content:""}
+.devicon-redhat-plain:before{content:""}
+.devicon-ubuntu-plain:before{content:""}
+.devicon-debian-plain:before{content:""}

@@ -1,0 +1,31 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  &.main {
+    .logo {
+      margin-top: 1.8rem;
+      border-radius: 2.5%;
+    }
+
+    .name {
+      margin-top: 1rem;
+    }
+
+    .title {
+      margin-left: 3%;
+      color: #ccc;
+      font-style: italic;
+      font-size: 1.5rem !important;
+    }
+  }
+}
+
+@media (min-width: 768px) { .container { width: 95%; } }
+@media (min-width: 992px) { .container { width: 85%; } }
+@media (min-width: 1200px) { .container { width: 80%; } }
+@media (min-width: 1800px) { .container { width: 100rem; } }

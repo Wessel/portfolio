@@ -1,0 +1,22 @@
+// outdated font
+// @font-face {
+//   font-family: 'Mfizz';
+//   src: url('../font/mfizz-custom.eot');
+//   src: url('../font/mfizz-custom.eot?#iefix') format('embedded-opentype'),
+//     url('../font/mfizz-custom.woff') format('woff'),
+//     url('../font/mfizz-custom.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: 'devicon';
+  src: url('../font/devicon.eot');
+  src: url('../font/devicon.eot?#iefix') format('embedded-opentype'),
+    url('../font/devicon.woff') format('woff'),
+    url('../font/devicon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

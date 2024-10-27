@@ -1,0 +1,17 @@
+.footer {
+  margin-top: 25px;
+  text-align: left;
+  padding: 5px;
+  border-top: 2px rgba(0, 0, 0, .6) solid;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+
+  .logo {
+    width: 100%;
+    max-width: 150px;
+    margin: 5px;
+    border-radius: 2.5%;
+    filter: invert(35%) sepia(95%) saturate(435%) hue-rotate(131deg) brightness(94%) contrast(101%);
+  }
+}
