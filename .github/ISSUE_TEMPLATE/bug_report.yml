@@ -1,22 +1,13 @@
-# Adapted from https://github.com/discordjs/discord.js/blob/main/.github/ISSUE_TEMPLATE/bug_report.yml
 name: Bug report
 description: Report incorrect or unexpected behavior of a package
 labels: [bug, need repro]
 body:
-  # - type: markdown
-  #   attributes:
-  #     value: |
-  #       Use Discord for questions: https://discord.gg/djs
   - type: dropdown
     id: package
     attributes:
       label: Which part is this bug report for?
-      options:
-        - v1
-        - v2
-        - v3
-        - v4
-        - v5
+      options: [styling, javascript, html]
+
     validations:
       required: true
   - type: textarea
@@ -36,7 +27,7 @@ body:
     attributes:
       label: Code sample
       description: Include a reproducible, minimal code sample. This will be automatically formatted into code, so no need for backticks.
-      render: Sass
+      render: javascript
       placeholder: |
         Your code sample should be...
         ... Minimal - Use as little code as possible that still produces the same problem (and is understandable)
@@ -52,9 +43,9 @@ body:
   - type: input
     id: lang-version
     attributes:
-      label: Sass version
+      label: 'javascript version'
       description: |
-        Which version of Sass are you using?
+        Which version of javascript are you using?
     validations:
       required: true
   - type: input
