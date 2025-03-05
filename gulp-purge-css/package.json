@@ -1,0 +1,11 @@
+{
+  "name": "gulp-purge-css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-purgecss": "^5.0.0",
+    "vinyl-sourcemaps-apply": "^0.2.1"
+  }
+}

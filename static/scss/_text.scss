@@ -1,18 +1,7 @@
-@import 'utilities/variables';
+$selection_background: rgba(128, 0, 0, 0.3);
 
-h1 {
-  font-family: 'Righteous', sans-serif;
-  text-transform: uppercase;
-  font-style: italic;
-  font-size: 4rem !important;
-}
-
-h2.section {
-  font-family: 'Righteous', sans-serif;
-  text-transform: uppercase;
-  font-style: italic;
-  padding: 1.5rem;
-  font-size: 4rem;
+h2 {
+  font-size: 3.5rem !important;
 }
 h3 {
   font-size: 3.2rem !important;
@@ -63,41 +52,18 @@ h3 {
   background-color: $selection_background;
 }
 
-/* Shine animations for hyperlinks */
-@-webkit-keyframes shine {
-  from {
-    -webkit-mask-position: 150%;
-  }
-  to {
-    -webkit-mask-position: -50%;
-  }
+/*
+
+.colour {
+  &.sun { color: #f1c40f }
+  &.gray { color: #cacaca }
+  &.purple { color: #551a8b }
+  &.emerald { color: #2ecc71 }
 }
 
-@keyframes shine {
-  from {
-    mask-position: 150%;
-  }
-  to {
-    mask-position: -50%;
-  }
+.align {
+  &.center { text-align: center; }
+  &.left { text-align: left; }
+  & .right { text-align: right; }
 }
-
-.hyper {
-  &.white { color: #ffffff; }
-
-  font-weight: 400;
-  font-style: italic;
-  text-decoration: none;
-  color: $color_hyperref;
-
-  mask-image: $mask_image;
-  -webkit-mask-image: $mask_image;
-  mask-size: $mask_size;
-  -webkit-mask-size: $mask_size;
-
-  &:hover {
-    animation: shine 2s infinite;
-    transition: all 0.15s ease-in-out;
-    color: $color_highlight;
-  }
-}
+*/
