@@ -1,111 +1,100 @@
+<!--
+/*-----------------------------------------------------------*\
+|                              _                              |
+|                             | |                             |
+|  __      _____  ___ ___  ___| | __ _  __ _ _ __ ___   ___   |
+|  \ \ /\ / / _ \/ __/ __|/ _ \ |/ _` |/ _` | '_ ` _ \ / _ \  |
+|   \ V  V /  __/\__ \__ \  __/ | (_| | (_| | | | | | |  __/  |
+|    \_/\_/ \___||___/___/\___|_|\__, |\__,_|_| |_| |_|\___|  |
+|                                 __/ |                       |
+|                                |___/                        |
+| This code is made by Wesselgame and it's licensed under the |
+| MIT license ( https://opensource.org/licenses/MIT )         |
+|                                                             |
+| GitHub: https://github.com/PassTheWessel                    |
+\*-----------------------------------------------------------*/
+-->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  <head>
+    <!-- Meta tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta property="og:site_name"   content="wessel.why-is-this-a-me.me" />
+    <meta property="og:image"       content="img/avatar.svg" />
+    <meta property="og:title"       content="wessel.why-is-this-a-me.me" />
+    <meta property="og:url"         content="index.html" />
 
-  <title>Wesselgame - home</title>
-  <base target="_blank">
-  <meta property="og:url" content="http://wessel.meek.moe/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Wesselgame" />
-  <meta property="og:image" content="https://wessel.meek.moe/static/img/logos/1.gif" />
-  <meta property="og:locale" content="en_us">
-  <meta property="og:site_name" content="Wesselgame">
-  <meta property="og:description" content="A full stack developer from the Netherlands, developer for fun" />
-  <link rel="SHORTCUT ICON" href="static/img/favicon.ico">
-  <meta name="KEYWORDS"
-    content="wessel, wesselgame, wesseltip, tip open source, github, discord, sass, brainfuck, html, css" />
-  <meta name="theme-color" content="#80BD01" />
-  <meta name="DESCRIPTION" content="A full stack developer from the Netherlands, developer for fun" />
+    <meta name="og:description"     content="Just another developer from the Netherlands" />
+    <meta name="description"        content="Just another developer from the Netherlands" />
+    <!-- I gotta fix the view port, using this for now. -->
+    <meta name="viewport"           content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <meta name="keywords"           content="wessel, wesselgame, wesseltip website, developer GitHub, Discord">
+    <!-- Links -->
+    <link rel="icon"       type="image/x-icon" href="img/favicon.ico">
 
-  <meta property="twitter:url" content="https://wessel.meek.moe/">
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Wesselgame">
-  <meta property="twitter:image" content="https://wessel.meek.moe/static/img/logos/1.gif">
-  <meta property="twitter:description" content="A full stack developer from the Netherlands, developer for fun">
+    <link rel="stylesheet" type="text/css" href="css/emoji.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/particles.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/nes.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/tooltips.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+    <!-- Customization -->
+    <title>Wesselgame</title>
+    <link rel="shortcut-icon" type="image/x-icon" href="img/favicon.ico" >
+  </head>
+<body>
+  <div id="particles-js"></div>  
+  <!-- <div id="particles-js" style="width: 100%; height: 100%"></div> -->
 
-  <link rel="stylesheet" type="text/css" href="static/css/all.css">
-  <link rel="stylesheet" type="text/css" href="static/css/main.css">
-
-  <script src="static/js/jquery.js"></script>
-  <script src="static/js/bootstrap.js"></script>
-</head>
-
-<body id="body">
-  <div class="container center main_slide content">
-    <div class="row main">
-      <div class="col-xs-6">
-        <img id="logo" src="static/img/logos/1.webp" width="200" height="200">
-        <div class="icon_set unselectable">
-          <a href="https://twitch.tv/wesselgame"><i class="fab fa-twitch fa-3x twitch"></i></a>
-          <a href="https://twitter.com/wessel_tip"><i class="fab fa-twitter fa-3x twitter"></i></a>
-          <a href="https://open.spotify.com/user/wesselgame"><i class="fab fa-spotify fa-3x spotify"></i></a>
-          <a href="https://github.com/PassTheWessel"><i class="fab fa-github fa-3x github"></i></a>
-          <a href="https://steamcommunity.com/id/wesselgame"><i class="fab fa-steam fa-3x steam"></i></a>
-          <a href="https://last.fm/user/wesselgame"><i class="fab fa-lastfm fa-3x lastfm"></i></a>
-          <a href="mailto:discord@go2it.eu"><i class="far fa-envelope fa-3x email"></i></a>
-          <a href="https://discord.gg/SV7DAE9"><i class="fab fa-discord fa-3x discord"></i></a>
-        </div>
-      </div>
-      <div class="col-xs-6 left">
-        <h1>Wesselgame</h1>
-        <span class="description">
-          Hello, my name is <span class="emerald">Wessel</span> (Also known as <span class="emerald">Wesselgame</span>
-          or <span class="emerald">PassTheWessel</span> on the internet).
-          I'm a full stack developer from the Netherlands and I've made, localized and contributed to many projects,
-          some of them are <a href="https://github.com/PassTheWessel/pikmin">Pikmin</a> and <a href="https://github.com/wumpusapp/wumpfetch">Wumpfetch</a>.
-          I've been coding for around <span class="sun">5 years</span> (since <span class="sun">20-09-2012</span>) and i still learn a lot every day.
-        </span>
-      </div>
-    </div>
-
-    <hr />
-
-    <div class="row experience">
-      <div class="col-xs-12">
-        <h4><i class="emoji large canister"></i>Things I'm experienced with and use</h4>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 code-icons unselectable">
-          <i class="icon-nodejs" data-toggle="tooltip" data-placement="top" title="" data-original-title="NodeJS"></i>
-          <i class="icon-javascript" data-toggle="tooltip" data-placement="top" title="" data-original-title="JavaScript"></i>
-          <i class="icon-gulp" data-toggle="tooltip" data-placement="top" title="" data-original-title="Gulp"></i>
-          <i class="icon-shell" data-toggle="tooltip" data-placement="top" title="" data-original-title="Shell"></i>
-          <i class="icon-css" data-toggle="tooltip" data-placement="top" title="" data-original-title="CSS"></i>
-          <i class="icon-html" data-toggle="tooltip" data-placement="top" title="" data-original-title="HTML"></i>
-          <i class="fas fa-bug fa-3x" data-toggle="tooltip" data-placement="top" title="" data-original-title="Brainfuck"></i>
-          <i class="icon-sass" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sass"></i>
-          <br />
-          <i class="icon-redis" data-toggle="tooltip" data-placement="top" title="" data-original-title="Redis"></i>
-          <i class="icon-ubuntu" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ubuntu"></i>
-          <i class="icon-raspberrypi" data-toggle="tooltip" data-placement="top" title="" data-original-title="Raspberry PI"></i>
-          <i class="icon-redhat" data-toggle="tooltip" data-placement="top" title="" data-original-title="RedHat"></i>
-        </div>
-      </div>
-    </div>
-
-    <hr />
-
-    <div class="row">
-      <div class="col-xs-12">
-        <h4><i class="emoji large canister"></i>Some projects I made/contributed to</h4>
-    </div>
-    <div class="row projects">
-      <div class="col-xs-12 data left">
-        <a href="https://github.com/PassTheWessel/larg" class="emerald">Larg</a> - A lightweight and easy to use Node.JS CLI argument parser<br />
-        <a href="https://github.com/PassTheWessel/pikmin" class="emerald">Pikmin</a> - A lightweight and easy to use Node.JS logger<br />
-        <a href="https://github.com/PassTheWessel/yorushika" class="emerald">Yorushika</a> - A multi-platform bot, written in Node.JS<br />
-        <a href="https://github.com/PassTheWessel/snowflakey" class="emerald">Snowflakey</a> - Snowflake generation and lookup in Node.JS<br />
-        <a href="https://github.com/PassTheWessel/wumpfetch" class="emerald">Wumpfetch</a> - A lightweight, fast and easy to use Node.JS HTTP client<br />
+    <div class="content">
+      <img draggable=false id="icon" class="round" src="img/avatar.svg" />
+      <h1 class="titletext">Wessel</h1>
+      <h2 class="undertext">
+          <p class="typewrite" data-period="2000" data-type='[ "Self-thought Developer", "Bad graphics designer", "Web Developer", "Node.js Developer", "Lua Developer" ]'>
+              <span class="wrap"></span>
+          </p>
+      </h2>
+      <div id="main">
+        <a draggable="false" target="_blank" class="btn twitter animation hover" href="https://www.twitter.com/wessel_tip">Twitter</a>
+        <a draggable="false" target="_blank" class="btn discord animation hover" href="https://www.discord.gg/SV7DAE9">Discord</a>
+        <a draggable="false" target="_blank" class="btn github animation hover" href="https://www.github.com/PassTheWessel">GitHub</a>
+        <a draggable="false" target="_blank" class="btn patreon animation hover" style="color: #fff !important;" href="https://www.patreon.com/wessel">Patreon</a>
+        <a draggable="false" target="_blank" class="btn steam animation hover" href="https://www.steamcommunity.com/id/wesselgame">Steam</a>
+        <a draggable="false" target="_blank" class="btn discord animation hover" href="mailto:discord@go2it.eu">E-mail</a>
         <br />
-        <a href="https://qtradio.moe/" class="emerald">QTradio.moe</a> - A radio service, founded by <a href="https://derpyenterprises.org/">ohlookitsderpy</a></ul>
+    </div>
+    <div class="box-container now">
+      <div class="one-full column">
+        <h1 class="emerald-text" style="font-size: 23px;"><i class="emoji reptice"></i>About me:</h1>
+        <div class="one-full column" style="font-size: 17px;">
+            <p>
+              Hello, my name is <span class="emerald-text">Wessel</span> and I'm also known as <span class="emerald-text">Wesselgame</span> or <span class="emerald-text">PassTheWessel</span> on the internet.
+              I've made, translated and contributed to various projects such as <a href="https://www.github.com/PassTheWessel/larg" class="sun-flower-text">Plarg ( a Node.js argument parser )</a>.
+              I've been coding for around <span class="sun-flower-text">4 years</span> and i still learn a lot while making stuff, The current languages i know well are <span class="emerald-text">HTML, CSS, Javascript, NodeJS and Lua</span>
+            </p>
       </div>
     </div>
-  </div>
-  <br />
-  <footer class="footer small">Site made with <span class="purple">&lt;3</span> by <a href="https://github.com/PassTheWessel">Wesselgame</a> | Source code on <a href="https://github.com/PassTheWessel/wessel.meek.moe">GitHub</a></footer>
-
-  <script async>$(function(){$('.code-icons i').tooltip();toggle_things=function(a, b){$('.' + a).slideUp('fast',function(){$('.'+b).slideDown('fast')})}});var hasWebP=function(){var o={basic:"data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACyAgCdASoCAAEALmk0mk0iIiIiIgBoSygABc6zbAAA/v56QAAAAA==",lossless:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAQAAAAfQ//73v/+BiOh/AAA="};return function(e){var t=$.Deferred();return $("<img>").on("load",function(){2===this.width&&1===this.height?t.resolve():t.reject()}).on("error",function(){t.reject()}).attr("src",o[e||"basic"]),t.promise()}}();hasWebP("lossless").then(function(){var e=Math.floor(50*Math.random());3<=e&&e<=4&&(document.getElementById("logo").src="static/img/logos/"+e+".webp",document.getElementById("body").style.background="url(static/img/backgrounds/4.png)"),5<=e&&e<=6&&(document.getElementById("logo").src="static/img/logos/"+e+".webp")},function(){document.getElementById("logo").src="static/img/logos/2.gif"});</script>
+    <div class="one-full column" style="margin-top: 1%;">
+      <h1 class="emerald-text" style="font-size: 23px;"><i class="emoji reptice"></i>Some projects:</h1>
+      <div class="one-full column" style="font-size: 17px;">
+        <p>
+          <a href="https://www.github.com/PassTheWessel/larg" target="_blank" class="emerald-text"><i class="emoji repo"></i>larg</a> - A lightweight Node.js library for argument parsing
+          <br />
+          <a href="https://www.github.com/PassTheWessel/arigato.js" target="_blank" class="emerald-text"><i class="emoji repo"></i>arigato.js</a> - A customizable logger made for Node.js
+          <br />
+          <a href="https://www.github.com/PassTheWessel/wumpston" target="_blank" class="emerald-text"><i class="emoji repo"></i>wumpston</a> - A radio service mainly in Node.js
+          <br />
+          <a href="https://www.qtradio.moe" target="_blank" class="emerald-text"><i class="emoji repo-force-push"></i>qtradio.moe</a> - A radio service mainly in Node.js
+          <br />
+          <i><b>All my contributions can be found on my <a href="https://www.github.com/PassTheWessel" class="sun-flower-text"><i class="emoji octoface"></i>GitHub (PassTheWessel)</a></b></i>
+        </p>
+      </div>
+    </div>
+    <!-- scripts -->
+    <!-- <script src="src/js/debug.min.js"></script> -->
+    <script src="js/typewrite.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
