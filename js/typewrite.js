@@ -1,8 +1,8 @@
-var TxtType = function( e, toRotate, p ) {
+var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
-  this.e = e;
+  this.el = el;
   this.loopNum = 0;
-  this.p = parseInt( p, 10 ) || 2000;
+  this.period = parseInt(period, 10) || 2000;
   this.txt = '';
   this.tick();
   this.isDeleting = false;
@@ -18,7 +18,7 @@ TxtType.prototype.tick = function() {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.e.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
   var that = this;
   var delta = 65; // 200 - Math.random() * 100
@@ -26,30 +26,32 @@ TxtType.prototype.tick = function() {
   if (this.isDeleting) { delta /= 2; }
 
   if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.p;
+    delta = this.period;
     this.isDeleting = true;
   } else if (this.isDeleting && this.txt === '') {
-    if ( this.loopNum >= 2 ) this.loopNum = 0; 
     this.isDeleting = false;
     this.loopNum++;
     delta = 65;
   }
 
-
-  setTimeout( function() { that.tick(); }, delta);
+  setTimeout(function() {
+    that.tick();
+  }, delta);
 };
 
 window.onload = function() {
   var elements = document.getElementsByClassName('typewrite');
   for (var i=0; i<elements.length; i++) {
-    var p        = elements[ i ].getAttribute( 'data-period' );
-    var r = elements[ i ].getAttribute( 'data-type' );
-    if ( r ) new TxtType( elements[ i ], JSON.parse( r ), p);
+    var toRotate = elements[i].getAttribute('data-type');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtType(elements[i], JSON.parse(toRotate), period);
+    }
   }
   // INJECT CSS
-  var css      = document.createElement( 'style' );
-  css.type     = 'text/css';
-  css.innerHTML = '.typewrite > .wrap { border-right: 0.08em solid #fff}';
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
 
