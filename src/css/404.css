@@ -1,0 +1,22 @@
+a    { text-decoration: none !important; color: #99AAB5 !important; }
+body {
+    color: white;
+    height: 100% !important;
+    background-image     : url( 'src/img/wallpaper/0.gif' );
+    background-size      : cover !important;
+    background-repeat    : no-repeat !important;
+    background-position  : center !important;
+    background-attachment: fixed !important;
+}
+
+.title      { text-transform: uppercase !important; }
+*.unselect  {
+    -moz-user-select   : -moz-none;
+    -khtml-user-select : none;
+    -webkit-user-select: none;
+
+    -ms-user-select    : none;
+    user-select        : none;
+}
+
+::selection { background: #FFFFFF; }

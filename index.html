@@ -1,165 +1,106 @@
 <!--
-/*--------------------------------*\
-|                              _   |
-|                             | |  |
-|  __      _____  ___ ___  ___| |  |
-|  \ \ /\ / / _ \/ __/ __|/ _ \ |  |
-|   \ V  V /  __/\__ \__ \  __/ |  |
-|    \_/\_/ \___||___/___/\___|_|  |
-| github.com/Wessel/portofolio     |
-|                                  |
-| This code is made as portofolio  |
-| page by wessel Tip (wessel.gg)   |
-| and it's licensed under the MIT  |
-| license, for more info visit     |
-| opensource.org/licenses/MIT.     |
-\*--------------------------------*/
+/*-----------------------------------------------------------*\
+|                              _                              |
+|                             | |                             |
+|  __      _____  ___ ___  ___| | __ _  __ _ _ __ ___   ___   |
+|  \ \ /\ / / _ \/ __/ __|/ _ \ |/ _` |/ _` | '_ ` _ \ / _ \  |
+|   \ V  V /  __/\__ \__ \  __/ | (_| | (_| | | | | | |  __/  |
+|    \_/\_/ \___||___/___/\___|_|\__, |\__,_|_| |_| |_|\___|  |
+|                                 __/ |                       |
+|                                |___/                        |
+| This code is made by Wesselgame and it's licensed under the |
+| MIT license ( https://opensource.org/licenses/MIT )         |
+|                                                             |
+| GitHub: https://github.com/PassTheWessel                    |
+\*-----------------------------------------------------------*/
 -->
 
-<!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <!-- Meta tags -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta property="og:site_name"   content="passthewessel.github.io" />
+        <meta property="og:image"       content="src/img/avatar.svg" />
+        <meta property="og:title"       content="passthewessel.github.io" />
+        <meta property="og:url"         content="index.html" />
 
-<head>
-  <base target="_blank">
-  <base href="static/">
+        <meta name="og:description"     content="Just another developer from the Netherlands" />
+        <meta name="description"        content="Just another developer from the Netherlands" />
+        <meta name="viewport"           content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+        <meta name="keywords"           content="wessel, wesselgame, wesseltip website, developer GitHub, Discord">
+        <!-- Links -->
+        <link rel="icon"       type="image/x-icon" href="src/img/favicon.ico">
 
-  <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-  <meta property="og:url" content="http://wessel.gg/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Wessel Tip" />
-  <meta property="og:image" content="https://wessel.gg/static/img/embed-logo-dark.png" />
-  <meta property="og:locale" content="en_us">
-  <meta property="og:site_name" content="/home/ &mdash; Wessel">
-  <meta property="og:description"
-    content="Developer and Photographer. Feel free to contact me for inquiries via contact@wessel.gg." />
-
-  <meta name="KEYWORDS" content="wessel, wesselgame, wesseltip, tip" />
-  <meta name="theme-color" content="#171825" />
-  <meta name="DESCRIPTION"
-    content="Developer and Photographer. Feel free to contact me for inquiries contact@wessel.gg." />
-  <!-- temp -->
-  <link rel="icon" type="image/x-icon" href="img/favicon-dark.ico">
-  <link rel="shortcut-icon" type="image/x-icon" href="img/favicon.ico">
-
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
-
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <title>Wessel Tip</title>
-</head>
-
-<body>
-  <div class="background-darken">
-    <div id="particles-js"></div>
-    <div class="container center">
-      <div class="content maincontent">
-        <div class="row main">
-          <div class="col-sm-4">
-            <img style="margin-top: 1.8rem" width="auto" height="auto" src="img/logo-gradient.svg" alt="logo">
-          </div>
-          <div class="col-sm-8 left">
-            <h1 class="name">Wessel Tip</h1>
-            <h2 class="title">Developer, Photographer</h2>
-            <div class="icon_set socials unselectable">
-              <a draggable="false" href="https://linkedin.com/wessel"><i class="glyph linkedin hyper white"
-                  data-bs-toggle="tooltip" data-bs-placement="bottom" title="contact@wessel.gg">&#8203;</i></a>
-              <a draggable="false" href="https://github.com/wessel"><i class="glyph github hyper white"
-                  data-bs-toggle="tooltip" data-bs-placement="bottom" title="@Wessel">&#8203;</i></a>
-              <a draggable="false" href="https://discord.com/channels/@me/107130754189766656"><i
-                  class="glyph discord hyper white" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                  title="@Wesselgame">&#8203;</i></a>
-              <a draggable="false" href="mailto:contact@wessel.gg"><i class="glyph email hyper white"
-                  data-bs-toggle="tooltip" data-bs-placement="bottom" title="contact@wessel.gg">&#8203;</i></a>
+        <link rel="stylesheet" type="text/css" href="src/css/style.min.css" />
+        <link rel="stylesheet" type="text/css" href="src/css/nes.min.css" />
+        <link rel="stylesheet" type="text/css" href="src/css/tooltips.min.css" />
+        <link rel="stylesheet" type="text/css" href="src/css/mfizz.min.css">
+        <!-- scripts -->
+        <script src="src/js/debug.min.js"></script>
+        <script src="src/js/index.min.js"></script>
+        <!-- Customization -->
+        <title>Wesselgame</title>
+        <link rel="shortcut-icon" type="image/x-icon" href="src/img/favicon.ico" >
+    </head>
+    <body class="unselect">
+        <center>
+            <br />
+            <img draggable=false id="icon" src="src/img/avatar.svg" />
+            <h1 class="titletext">Wesselgame</h1>
+            <h2 class="undertext">
+                <p class="typewrite" data-period="2000" data-type='[ "Self-thought Developer", "Bad graphics designer", "Web Developer", "NodeJS Developer", "Lua Developer" ]'>
+                    <span class="wrap"></span>
+                </p>
+            </h2>
+            <div id="main">
+                &nbsp;<a draggable=false class="btn is-success" target="_blank" style="color: black !important;" href="https://discord.gg/SV7DAE9">Discord</a>
+                &nbsp;<a draggable=false class="btn is-success" target="_blank" style="color: black !important;" href="https://twitter.com/wessel_tip">Twitter</a>
+                <a draggable=false class="btn is-warning" target="_blank" style="color: black !important;" href="https://github.com/PassTheWessel">GitHub</a>
+                <a draggable=false class="btn is-warning"   target="_blank" style="color: black !important;" href="https://patreon.com/wessel">Patreon</a>
+                <a draggable=false class="btn is-error"   target="_blank" style="color: black !important;" href="mailto:discord@go2it.eu">E-mail</a>
+				<a draggable=false class="btn is-error" target="_blank" style="color: black !important;" href="https://steamcommunity.com/id/wesselgame">Steam</a>
+                <br>
             </div>
-          </div>
-          <div class="row left">
-            <p><span id="age">??</span> year old self-taught software engineer from <span id="country">The
-                Netherlands.</span><br />
-              <a href="https://www.last.fm/user/wesselgame" class="hyper">Music</a> and <a class="hyper"
-                href="https://photo.wessel.gg/">photography</a> is my passion besides developing.
-            </p>
-            <p>Currently studying computer engineering at the Inholland University of Applied Sciences in Alkmaar and
-              have a Cambridge English Level 2 Certficate in ESOL International.</p>
-            <p>A lot of my work is closed source or unfinished, but the ones that are open sourced can be found on my <a
-                class="hyper" href="https://github.com/Wessel">GitHub</a>.
-              Feel free to send an e-mail to <a class="hyper" href="mailto:contact@wessel.gg">contact@wessel.gg</a> for
-              any inquiries, whether it be about development or photography. <br />
-          </div>
-        </div>
-
-        <div class="row experience">
-          <div class="col">
-            <h2 class="section">Proficiency</h2>
-            <div class="row icon_set unselectable">
-              <div class="col" style="font-size: 2rem !important;">
-
-                <i data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cassandra" class="glyph cassandra"></i>
-                <i data-bs-toggle="tooltip" data-bs-placement="bottom" title="PostgreSQL" class="glyph postgres"></i>
-                <i data-bs-toggle="tooltip" data-bs-placement="bottom" title="Docker" class="glyph docker"></i>
-                <i data-bs-toggle="tooltip" data-bs-placement="bottom" title="Git" class="glyph git"></i>
-              </div>
+            <br />
+            <div class="container is-dark with-title">
+                <label class="title" style="font-size: 25px; margin-top: 10px;">About me</label>
+                <br />
+                <p style="color: #ffffff; font-size: 12px; text-align: left">Hello there! I'm Wessel (Known as Wesselgame or PassTheWessel online) and I'm a developer from the Netherlands. I mainly use HTML, JavaScript, NodeJS, Lua and CSS!<br />You can get into contact with me via my <a href="https://discord.gg/SV7DAE9">Discord</a> or <a href="mailto:discord@go2it.eu">E-mail</a></p>
             </div>
-            <div class="row icon_set unselectable">
-              <div class="col">
-                <i data-bs-toggle="tooltip" data-bs-placement="bottom" title="C" class="glyph c"></i>
-                <i data-bs-toggle="tooltip" data-bs-placement="bottom" title="C++" class="glyph cplusplus"></i>
-                <i data-bs-toggle="tooltip" data-bs-placement="bottom" title="C#" class="glyph csharp"></i>
-                <i data-bs-toggle="tooltip" data-bs-placement="bottom" title="Elixir" class="glyph elixir"></i>
-                <i data-bs-toggle="tooltip" data-bs-placement="bottom" title="Rust" class="glyph rust"></i>
-                <i data-bs-toggle="tooltip" data-bs-placement="bottom" title="TypeScript" class="glyph typescript"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row projects">
-          <h2 class="section">Projects</h2>
-          <div class="col">
-            <div class="card">
-              <div class="wrapper">
-                <div class="banner-image-revvedup"> </div>
-                <h1>RevvedUp</h1>
-                <div class="icon_set">
-                  <i class="glyph svelte" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                    title="SvelteKit">&#8203;</i>
-                  <i class="glyph nginx" data-bs-toggle="tooltip" data-bs-placement="bottom" title="NGINX">&#8203;</i>
+            <br />
+            <div class="container is-dark with-title unselect">
+                <label class="title" style=" font-size: 15px; margin-top: 10px;">Things I'm good at</label>
+                <br />
+                <div style="color: #ffffff; text-align: center;">
+                    <button data-balloon-pos="up" style="border: none; background: transparent;" data-balloon="JavaScript"><i style="color: #FEF728; font-size: 30px; margin-left: 9px;" class="icon-javascript"></i></button>
+                    <button data-balloon-pos="up" style="border: none; background: transparent;" data-balloon="Node.JS">   <i style="color: #80BD01; font-size: 30px; margin-left: 9px;" class="icon-nodejs" ></i></button>
+                    <button data-balloon-pos="up" style="border: none; background: transparent;" data-balloon="Shell">     <i style="color: #FFFFFF; font-size: 30px; margin-left: 0px;" class="icon-shell"></i></button>
+                    <button data-balloon-pos="up" style="border: none; background: transparent;" data-balloon="HTML">      <i style="color: #F1642C; font-size: 30px; margin-left: 9px;" class="icon-html"></i></button>
+                    <button data-balloon-pos="up" style="border: none; background: transparent;" data-balloon="CSS">       <i style="color: #2BA8E0; font-size: 30px; margin-left: 8px;" class="icon-css"></i></button>
                 </div>
-                <p>Join the Ultimate Community for Motor Vehicle Enthusiasts! It's time to upshift your limits!</p>
-              </div>
-              <div class="button-wrapper">
-                <a href="https://revvedup.nl" target="_blank">
-                  <button class="btn center-skew-hover">Visit Website</button>
-                </a>
-              </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <div class="wrapper">
-                <div class="banner-image-muetab"> </div>
-                <h1>Muetab</h1>
-                <div class="icon_set">
-                  <i class="glyph react" data-bs-toggle="tooltip" data-bs-placement="bottom" title="React">&#8203;</i>
+            <section class="container is-dark with-title">
+                <label class="title" style="font-size: 15px; margin-top: 10px;">My Projects / Contributions</label>
+                <br />
+                <div class="containers">
+                    <div class="container is-dark with-title" style="float: left">
+                        <label class="title" style="margin-top: 10px;">Wump</label>
+                        <br />
+                        <p style="color: #ffffff; font-size: 12px;">Wump is a 24/7 hosted discord bot with various features such as moderation, economy and more! (currently in rewrite)</p>
+                        <a draggable=false href="https://wumpusapp.github.io" class="btn" target="_blank" style="color: black !important;">More info</a>
+                    </div>
+                    <div class="container is-dark with-title" style="float: right">
+                        <label class="title" style="margin-top: 10px;">QTradio</label>
+                        <br />
+                        <p style="color: #ffffff; font-size: 12px;">24/7 online radio with anime songs, VOCALOID and more!<br />Found and managed by <a style="color:#99AAB5 !important;" href="https://www.github.com/ohlookitsderpy">Derpy</a></p>
+                        <a draggable=false href="https://qtradio.moe/" class="btn" target="_blank" style="color: black !important;">More info</a>
+                    </div>
                 </div>
-                <p>Fast, open and free-to-use new tab page for modern browsers</p>
-              </div>
-              <div class="button-wrapper">
-                <a href="https://muetab.com" target="_blank">
-                  <button class="btn center-skew-hover">Visit Website</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="js/main.min.js"></script>
-  <script>
-    const ageDate = new Date(Date.now() - new Date(2004, 7, 29));
-    document.getElementById('age').innerHTML = Math.abs(ageDate.getUTCFullYear() - 1970);
-  </script>
-</body>
-
+            </section>
+        </center>
+    </body>
 </html>
+
+<!--
+<a href="https://nodejs.org" target="_blank"><img draggable="false" src="img/nodejs.svg" style="border-radius: 0px; width: 38px; height: 40px;" /></a>
+-->
