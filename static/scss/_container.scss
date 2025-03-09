@@ -8,18 +8,18 @@
 .row {
   &.main {
     .logo {
-      margin-top: 15px;
+      margin-top: 1.8rem;
       border-radius: 2.5%;
-      filter: invert(35%) sepia(95%) saturate(435%) hue-rotate(131deg) brightness(94%) contrast(101%);
     }
 
     .name {
-      margin-top: 2%;
+      margin-top: 1rem;
     }
 
     .title {
       margin-left: 3%;
       color: #ccc;
+      font-style: italic;
       font-size: 1.5rem !important;
     }
   }
