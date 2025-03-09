@@ -1,0 +1,59 @@
+$font-stack: 'Russo One', sans-serif;
+
+body {
+  color: #ffffff;
+  background: #333333 url('../img/backgrounds/1.png');
+  font-family: $font-stack;
+}
+
+// Break line and heads
+hr { border-color: rgba(0, 0, 0, 1); }
+
+h1 { font-size: 4rem;   margin-top: 0; }
+h2 { font-size: 3.5rem; margin-top: 0; }
+h3 { font-size: 3rem;   margin-top: 0; }
+h4 { font-size: 2rem;   margin-top: 0; }
+h5 { font-size: 1.5rem; margin-top: 0; }
+h6 { font-size: 1rem;   margin-top: 0; }
+
+// Small text
+small {
+  color: #c4c4c4;
+  font-size: 75%;
+}
+
+// Centering
+.front_and_center {
+  width: 600px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.left { text-align: left; }
+.right { text-align: right; }
+.center { text-align: center; }
+
+// Unselectable text
+.unselectable {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+// Footer
+.footer {
+  width: 90%;
+  display: table;
+  text-align: center;
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, .6);
+
+  margin: {
+    left: auto;
+    right: auto;
+    bottom: 10px;
+  }
+}
