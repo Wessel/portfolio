@@ -42,7 +42,10 @@
 
 
 .icon_set {
-  a { color: #eee ;}
+  a {
+    color: #eee;
+    text-decoration: none;
+  }
 
   i {
     transition: .3s color;
